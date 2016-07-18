@@ -73,7 +73,7 @@ ROOT_URLCONF = 'teckels.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['main', 'dashboard'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
