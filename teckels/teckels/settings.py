@@ -142,16 +142,28 @@ DATE_INPUT_FORMATS = ('%d/%m/%Y',)
 DATETIME_INPUT_FORMATS = ('%d/%m/%Y %H:%M',)
 
 
-
 # Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/1.9/howto/static-files/
-
+# https://docs.djangoproject.com/en/1.6/howto/static-files/
 STATIC_URL = '/static/'
 
 if IS_ON_OPENSHIFT:
     STATIC_ROOT = os.path.join(os.environ.get('OPENSHIFT_REPO_DIR'), 'wsgi', 'static')
 else:
     STATIC_ROOT = os.path.join(BASE_DIR, 'wsgi', 'static')
+
+
+if IS_ON_OPENSHIFT:
+    STATICFILES_DIRS = (
+        os.path.join(os.environ.get('OPENSHIFT_REPO_DIR'), 'static'),
+    )
+else:
+    STATICFILES_DIRS = (
+        os.path.join(BASE_DIR, 'static'), 
+    )
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),  # Needed for the general static files
+)
 
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
@@ -165,8 +177,6 @@ if IS_ON_OPENSHIFT:
 else:
     MEDIA_URL = '/media/'
     MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-    
-
 
 # Debug Mode in terminal
 LOGGING = {
