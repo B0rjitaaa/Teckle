@@ -148,6 +148,25 @@ DATETIME_INPUT_FORMATS = ('%d/%m/%Y %H:%M',)
 
 STATIC_URL = '/static/'
 
+if IS_ON_OPENSHIFT:
+    STATIC_ROOT = os.path.join(os.environ.get('OPENSHIFT_REPO_DIR'), 'wsgi', 'static')
+else:
+    STATIC_ROOT = os.path.join(BASE_DIR, 'wsgi', 'static')
+
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+)
+
+# Media files (Uploaded files)
+if IS_ON_OPENSHIFT:
+    MEDIA_URL = '/static/media/'
+    MEDIA_ROOT = os.path.join(os.environ.get('OPENSHIFT_DATA_DIR'), 'media')
+else:
+    MEDIA_URL = '/media/'
+    MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+    
+
 
 # Debug Mode in terminal
 LOGGING = {
