@@ -43,10 +43,6 @@ class Shop(models.Model):
         blank=True,
         null=True
     )
-    tax_number = models.CharField(
-        _('utr'),
-        max_length=20
-    )
     phone = models.CharField(
         _('phone'),
         max_length=15,
