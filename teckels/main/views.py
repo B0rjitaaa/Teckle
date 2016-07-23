@@ -13,3 +13,7 @@ def index(request):
 		'shop': shop
 	}
 	return render (request, 'index.html', response)
+
+def contact(request):
+
+	return render (request, 'contact.html', {})
