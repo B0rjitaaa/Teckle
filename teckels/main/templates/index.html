@@ -20,7 +20,7 @@
 							<!-- Collect the nav links, forms, and other content for toggling -->
 							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 								<ul class="nav navbar-nav">
-									<li><a class="active" href="index.html">INICIO <span class="sr-only">(current)</span></a></li>
+									<li><a class="active" href="{% url 'index' %}">INICIO <span class="sr-only">(current)</span></a></li>
 									<li><a href="about.html">NOSOTROS</a></li>
 									<li class="dropdown">
 									  <a href="gallery.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">GALERÍA<span class="caret"></span></a>
@@ -30,7 +30,7 @@
 										<li><a href="gallery.html">Something else here</a></li>
 									  </ul>
 									</li>
-									<li><a href="contact.html">CONTACTO</a></li>
+									<li><a href="{% url 'contact' %}">CONTACTO</a></li>
 								</ul>
 							</div><!-- /.navbar-collapse -->
 								<div class="clearfix"></div>	
