@@ -1,0 +1,135 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block header %}
+	<!--header-part-->
+		<div class="banner-background" id="to-top">
+			<div class="container">
+				<div class="nav-back">
+					<div class="navigation">
+						<nav class="navbar navbar-default">
+							<!-- Brand and toggle get grouped for better mobile display -->
+							<div class="navbar-header">
+							  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							  </button>
+							</div>
+							<!-- Collect the nav links, forms, and other content for toggling -->
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+								<ul class="nav navbar-nav">
+									<li><a href="{% url 'index' %}">INICIO <span class="sr-only">(current)</span></a></li>
+									<li><a href="about.html">NOSOTROS</a></li>
+									<li class="dropdown">
+									  <a href="gallery.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">GALERÍA<span class="caret"></span></a>
+									  <ul class="dropdown-menu">
+										<li><a href="gallery.html">Action</a></li>
+										<li><a href="gallery.html">Another action</a></li>
+										<li><a href="gallery.html">Something else here</a></li>
+									  </ul>
+									</li>
+									<li><a class="active" href="{% url 'contact' %}">CONTACTO</a></li>
+								</ul>
+							</div><!-- /.navbar-collapse -->
+								<div class="clearfix"></div>	
+							<div class="clearfix"></div>
+						</nav>
+						<div class="clearfix"></div>
+					</div>
+					<div class="logo">
+						<h1><a href="index.html">TECKELS<span class="hlf"> DE GOLAGE</span></a></h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--header-ends-->
+{% endblock header %}
+
+{% block main %}
+	<div class="about-pg">
+		<h3>Nosotros</h3>
+		<div class="container">
+			<div class="col-md-6 lt">
+				<div class="choose-us">
+					<h3>Historia e Instalaciones en Golage</h3>
+					<ul>
+						<li class="text-ul">
+							<span class="one"></span>
+							<div class="folt">
+							<h4>Lorem Ipsum is simply dummy text</h4>
+							<p>Lorem Ipsum has been the industry's standard dummy </p>
+							</div>
+							<div class="clearfix"></div>
+						</li>
+						<li class="text-ul">
+							<span class="two"></span>
+							<div class="folt">
+							<h4>Lorem Ipsum is simply dummy text</h4>
+							<p>Lorem Ipsum has been the industry's standard dummy </p>
+							</div>
+							<div class="clearfix"></div>
+						</li>
+						<li class="text-ul">
+							<span class="three"></span>
+							<div class="folt">
+							<h4>Lorem Ipsum is simply dummy text</h4>
+							<p>Lorem Ipsum has been the industry's standard dummy </p>
+							</div>
+							<div class="clearfix"></div>
+						</li>
+					</ul>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="col-md-6 lt">
+				<div class="few-words">
+					<h3>A few words about us.</h3>
+						<div class="few-text">
+							<img src="./images/gift.jpg" alt="" title="" class="img-responsive" />
+							<div class="flt">
+								<h4>Lorem Ipsum is simply dummy text</h4>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Aldus PageMaker including versions of Lorem Ipsum.</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					<p><a href="#" class="btn btn-danger" role="button">More</a> </p>
+				</div>
+			</div>
+		<div class="clearfix"></div>
+	</div>	
+{% endblock main %}
+
+
+
+		
+		<!--about-->
+		
+		
+		<a href="#to-top" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+				});
+			});
+		</script>
+		<!----> 
+		<!---->
+		<script type="text/javascript">
+				$(document).ready(function() {
+						/*
+						var defaults = {
+						containerID: 'toTop', // fading element id
+						containerHoverID: 'toTopHover', // fading element hover id
+						scrollSpeed: 1200,
+						easingType: 'linear' 
+						};
+						*/
+				$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+		</script>
+	</body>
+</html>
