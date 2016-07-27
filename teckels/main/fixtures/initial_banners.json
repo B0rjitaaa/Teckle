@@ -1,0 +1,58 @@
+[
+{
+    "model": "main.banner",
+    "pk": 2,
+    "fields": {
+        "name": "test",
+        "image": "images/banners/2.jpg"
+    }
+},
+{
+    "model": "main.banner",
+    "pk": 3,
+    "fields": {
+        "name": "test",
+        "image": "images/banners/3.jpg"
+    }
+},
+{
+    "model": "main.banner",
+    "pk": 4,
+    "fields": {
+        "name": "test",
+        "image": "images/banners/4.jpg"
+    }
+},
+{
+    "model": "main.banner",
+    "pk": 5,
+    "fields": {
+        "name": "test",
+        "image": "images/banners/5.jpg"
+    }
+},
+{
+    "model": "main.banner",
+    "pk": 6,
+    "fields": {
+        "name": "test",
+        "image": "images/banners/6.jpg"
+    }
+},
+{
+    "model": "main.banner",
+    "pk": 7,
+    "fields": {
+        "name": "test",
+        "image": "images/banners/7.jpg"
+    }
+},
+{
+    "model": "main.banner",
+    "pk": 8,
+    "fields": {
+        "name": "test",
+        "image": "images/banners/8.jpg"
+    }
+}
+]

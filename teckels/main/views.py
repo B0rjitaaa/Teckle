@@ -4,11 +4,11 @@ from main.models import Banner, Category, Shop
 # Create your views here.
 
 def index(request):
-	banner = Banner.objects.all()[0]
+	banners = Banner.objects.all()
 	category = Category.objects.all()
 	shop = Shop.objects.all()[0]
 	response = {
-		'banner': banner,
+		'banners': banners,
 		'category': category,
 		'shop': shop
 	}
