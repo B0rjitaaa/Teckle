@@ -21,3 +21,7 @@ def contact(request):
 
 def about(request):
 	return render (request, 'about.html', {})
+
+
+def teckel(request, item_slug, item_id):
+	return render (request, 'teckel.html', {})

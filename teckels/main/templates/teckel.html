@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block header %}
+	<!--header-part-->
+	<div class="banner-background" id="to-top">
+		<div class="container">
+			<div class="nav-back">
+				<div class="navigation">
+					<nav class="navbar navbar-default">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+						  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						  </button>
+						</div>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav">
+								<li><a href="{% url 'index' %}">INICIO <span class="sr-only">(current)</span></a></li>
+								<li><a href="about.html">NOSOTROS</a></li>
+								<li class="dropdown">
+								  <a href="gallery.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">GALERÍA<span class="caret"></span></a>
+								  <ul class="dropdown-menu">
+									<li><a href="gallery.html">Action</a></li>
+									<li><a href="gallery.html">Another action</a></li>
+									<li><a href="gallery.html">Something else here</a></li>
+								  </ul>
+								</li>
+								<li><a class="active" href="{% url 'contact' %}">CONTACTO</a></li>
+							</ul>
+						</div><!-- /.navbar-collapse -->
+							<div class="clearfix"></div>	
+						<div class="clearfix"></div>
+					</nav>
+					<div class="clearfix"></div>
+				</div>
+				<div class="logo">
+					<h1><a href="index.html">TECKELS<span class="hlf"> DE GOLAGE</span></a></h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--header-ends-->
+{% endblock header %}
+
+{% block main %}
+	<!--services-->
+	<div class="services">
+		<div class="container">
+			<div class="service-list">
+				<h3>MAIOLAS BRUNO</h3>
+				
+				<div class="col-md-5">
+					<div class="row">
+						<img src="{% static '../../media/images/5.jpg' %}" class="img-responsive" style="margin-left:15%; margin-bottom:15px">
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<img src="{% static '../../media/images/5.jpg' %}" class="img-responsive">
+						</div>
+						<div class="col-md-4">
+							<img src="{% static '../../media/images/5.jpg' %}" class="img-responsive">
+						</div>
+						<div class="col-md-4">
+							<img src="{% static '../../media/images/5.jpg' %}"class="img-responsive">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-7">
+					<div class="row" style="margin-left:10%">
+						<ul class="list">
+							<li><a href="#">Nombre oficial: </a>Maiolas Bruno</li>
+							<li><a href="#">Nombre famiilar: </a></li>
+							<li><a href="#">Padre: </a></li>
+							<li><a href="#">Madre: </a></li>
+							<li><a href="#">Madre: </a></li>
+							<li><a href="#">Sexo: </a></li>
+							<li><a href="#">Pelo: </a></li>
+							<li><a href="#">Color: </a></li>
+							<li><a href="#">Tamaño: </a></li>
+							<li><a href="#">Fecha de nacimiento: </a></li>
+							<li><a href="#">Títulos: </a></li>
+							<li><a href="#">Comentarios: </a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+		<!--services-->
+{% endblock main %}
+
+<script type="text/javascript">
+	jQuery(function($) {
+		$(".swipebox").swipebox();
+	});
+</script>
