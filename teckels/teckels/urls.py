@@ -24,6 +24,7 @@ urlpatterns = [
     url(r'^$', 'main.views.index', name='index'),
     url(r'^contact', 'main.views.contact', name='contact'),
     url(r'^about', 'main.views.about', name='about'),
+    url(r'^teckels/(?P<category_slug>[-\w]+)/(?P<category_id>\d+)/$', 'main.views.teckels', name='teckels'),
     url(r'^teckel/(?P<item_slug>[-\w]+)/(?P<item_id>\d+)/$', 'main.views.teckel', name='teckel'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
