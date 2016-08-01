@@ -22,41 +22,56 @@ def upload_to(instance, filename):
 
 
 class Item(models.Model):
-    reference_code = models.CharField(
-        _('reference_code'),
-        max_length=100
+    official_name = models.CharField(
+        _('Nombre oficial'),
+        max_length=100,
+        blank=True,
+        null=True
     )
-    name = models.CharField(
-        _('name'),
-        max_length=150
+    familiar_name = models.CharField(
+        _('Nombre familiar'),
+        max_length=150,
+        blank=True,
+        null=True
     )
-    starred = models.BooleanField(
-        _('starred'),
-        default=False
+    father = models.CharField(
+        _('Padre'),
+        max_length=150,
+        blank=True,
+        null=True
     )
-    visible = models.BooleanField(
-        _('visible'),
-        default=True
+    mother = models.CharField(
+        _('Madre'),
+        max_length=150,
+        blank=True,
+        null=True
     )
-    wholesale_price = models.DecimalField(
-        _('wholesale price'),
-        max_digits=8,
-        decimal_places=2,
-        validators=[MinValueValidator(Decimal('0.00'))]
+    sex = models.CharField(
+        _('Sexo'),
+        max_length=10,
+        blank=True,
+        null=True
     )
-    price = models.DecimalField(
-        _('price'),
-        max_digits=8,
-        decimal_places=2,
-        validators=[MinValueValidator(Decimal('0.00'))]
+    colour = models.CharField(
+        _('Color'),
+        max_length=150,
+        blank=True,
+        null=True
+    )
+    size = models.CharField(
+        _('Tamaño'),
+        max_length=150,
+        blank=True,
+        null=True
+    )
+    born_date = models.DateField(
+        _('Fecha nacimiento'),
+        blank=True,
+        null=True
     )
     upload_date = models.DateField(
         _('date added'),
         auto_now_add=True
-    )
-    times_sold = models.PositiveIntegerField(
-        _('times sold'),
-        default=0
     )
     shown_times = models.PositiveIntegerField(
         _('shown times'),
@@ -71,11 +86,29 @@ class Item(models.Model):
         'Category',
         related_name='items',
         related_query_name='item',
-        verbose_name=_('category'),
+        verbose_name=_('Pelo'),
         blank=True,
         null=True
     )
     image = models.ImageField(
+      upload_to=upload_to,
+      null=True,
+      blank=True,
+      max_length=1000
+    )
+    second_image = models.ImageField(
+      upload_to=upload_to,
+      null=True,
+      blank=True,
+      max_length=1000
+    )
+    third_image = models.ImageField(
+      upload_to=upload_to,
+      null=True,
+      blank=True,
+      max_length=1000
+    )
+    fourth_image = models.ImageField(
       upload_to=upload_to,
       null=True,
       blank=True,
