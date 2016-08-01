@@ -69,10 +69,6 @@ class Item(models.Model):
         blank=True,
         null=True
     )
-    upload_date = models.DateField(
-        _('date added'),
-        auto_now_add=True
-    )
     shown_times = models.PositiveIntegerField(
         _('shown times'),
         default=0
@@ -115,12 +111,12 @@ class Item(models.Model):
       max_length=1000
     )
     class Meta:
-        verbose_name = "Item"
-        verbose_name_plural = "Items"
+        verbose_name = "Teckel"
+        verbose_name_plural = "Teckles"
 
     def __str__(self):
-        return self.name
+        return self.official_name
 
     def save(self, *args, **kwargs):
-        self.slug = defaultfilters.slugify(self.name)
+        self.slug = defaultfilters.slugify(self.official_name)
         super(Item, self).save(*args, **kwargs)

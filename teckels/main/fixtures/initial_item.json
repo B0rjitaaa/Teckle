@@ -1,0 +1,340 @@
+[{
+    "model": "main.item",
+    "pk": 1,
+    "fields": {
+        "official_name": "MAIOL'AS BRUNO",
+        "familiar_name": "BRUNITO",
+        "father": "CH. ADDSIM'S THE CANDYMAN",
+        "mother": "ADDSIM'S SAHARA MAIOL'AS",
+        "sex": "MACHO",
+        "category": 3,
+        "colour": "CAOBA ATIGRADO",
+        "size": "MINIATURA",
+        "born_date": "2010-5-7",
+        "image": "",
+        "second_image": "",
+        "third_image": "",
+        "fourth_image": ""
+        
+    }
+},
+{
+    "model": "main.item",
+    "pk": 2,
+    "fields": {
+        "official_name": "LA CURSI DE GOLAGE",
+        "familiar_name": "CURSI",
+        "father": "EL PUMA DE GOLAGE",
+        "mother": "KAMILI DE LLUMO",
+        "sex": "HEMBRA",
+        "category": 3,
+        "colour": "CAOBA",
+        "size": "MINIATURA",
+        "born_date": "2008-7-18",
+        "image": "",
+        "second_image": "",
+        "third_image": "",
+        "fourth_image": ""
+        
+    }
+},
+{
+    "model": "main.item",
+    "pk": 3,
+    "fields": {
+        "official_name": "CHICA DE COLORES DE GOLAGE",
+        "familiar_name": "CHICA",
+        "father": "CH. MAGIK RAMBOW GLAMOUR",
+        "mother": "LUNA LLENA DE GOLAGE",
+        "sex": "HEMBRA",
+        "category": 3,
+        "colour": "EGRO Y FUEGO ARLEQUÍN",
+        "size": "KANINCHEN",
+        "born_date": "2016-2-9",
+        "image": "",
+        "second_image": "",
+        "third_image": "",
+        "fourth_image": ""
+        
+    }
+},
+{
+    "model": "main.item",
+    "pk": 4,
+    "fields": {
+        "official_name": "ULCE CHOCOLATINA DE GOLAGE",
+        "familiar_name": "DULCE",
+        "father": "CH. MAGIK RAMBOW GLAMOUR",
+        "mother": "LA COLAGA VALDELIENDO",
+        "sex": "HEMBRA",
+        "category": 3,
+        "colour": "CHOCOLATE",
+        "size": "ANINCHEN",
+        "born_date": "2016-2-6",
+        "image": "",
+        "second_image": "",
+        "third_image": "",
+        "fourth_image": ""
+        
+    }
+},
+{
+    "model": "main.item",
+    "pk": 5,
+    "fields": {
+        "official_name": "ESTRELLA ATIGRADA DE GOLAGE",
+        "familiar_name": "ESTRELLITA",
+        "father": "CH. EL PINPIN DE GOLAGE",
+        "mother": "MAIOL'AS PAOLA",
+        "sex": "HEMBRA",
+        "category": 3,
+        "colour": "CAOBA ATIGRADO",
+        "size": "KANINCHEN",
+        "born_date": "2016-1-5",
+        "image": "",
+        "second_image": "",
+        "third_image": "",
+        "fourth_image": ""
+        
+    }
+},
+{
+    "model": "main.item",
+    "pk": 6,
+    "fields": {
+        "official_name": "HIDALGO DEL CARONI",
+        "familiar_name": "HIDALGO",
+        "father": "CH. GRANDGABLES WEE CACTUS JACK",
+        "mother": "UANITA VOM DRILAND",
+        "sex": "MACHO",
+        "category": 3,
+        "colour": "NEGRO Y FUEGO",
+        "size": "MINIATURA",
+        "born_date": "2013-10-27",
+        "image": "",
+        "second_image": "",
+        "third_image": "",
+        "fourth_image": ""
+    }
+},
+{
+    "model": "main.item",
+    "pk": 7,
+    "fields": {
+        "official_name": "BRAKER DE GOLAGE",
+        "familiar_name": "BRAK",
+        "father": "MAX DE GOLAGE ",
+        "mother": "MAGIK RAMBOW VALENCIA",
+        "sex": "MACHO",
+        "category": 3,
+        "colour": "NEGRO Y FUEGO ARLEQUIN",
+        "size": "MINIATURA",
+        "born_date": "2013-9-5",
+        "image": "",
+        "second_image": "",
+        "third_image": "",
+        "fourth_image": ""
+        
+    }
+},
+{
+    "model": "main.item",
+    "pk": 8,
+    "fields": {
+        "official_name": "JACK I DE GOLAGE",
+        "familiar_name": "CATO",
+        "father": "MAX DE GOLAGE",
+        "mother": "CATA DEL CESTERO HORTAS",
+        "sex": "MACHO",
+        "category": 3,
+        "colour": "MARRON",
+        "size": "KANINCHEN",
+        "born_date": "2014-11-25",
+        "image": "",
+        "second_image": "",
+        "third_image": "",
+        "fourth_image": ""
+        
+    }
+},
+{
+    "model": "main.item",
+    "pk": 9,
+    "fields": {
+        "official_name": "JOTA DEL CESTERO HORTAS",
+        "familiar_name": "JOTA",
+        "father": "CH.MAGIK RAMBOW GLAMOUR",
+        "mother": "CH. RHONA DE GOLAGE",
+        "sex": "HEMBRA",
+        "category": 3,
+        "colour": "MARRON",
+        "size": "KANINCHEN",
+        "born_date": "2015-6-18",
+        "image": "",
+        "second_image": "",
+        "third_image": "",
+        "fourth_image": ""
+        
+    }
+},
+{
+    "model": "main.item",
+    "pk": 10,
+    "fields": {
+        "official_name": "MAGIK RAMBOW GLAMOUR",
+        "familiar_name": "GLAMOUR",
+        "father": "CH. REVESTRENKEN'S JACKPOT",
+        "mother": "CH.MAGIK RAMBOW MIRACLES",
+        "sex": "MACHO",
+        "category": 3,
+        "colour": "CAOBA",
+        "size": "KANINCHEN",
+        "born_date": "2013-3-22",
+        "image": "",
+        "second_image": "",
+        "third_image": "",
+        "fourth_image": ""
+        
+    }
+},
+{
+    "model": "main.item",
+    "pk": 11,
+    "fields": {
+        "official_name": "MINI PECAS DE GOLAGE",
+        "familiar_name": "MINIPE",
+        "father": "CH. MAGIK RAMBOW GLAMOUR",
+        "mother": "MOTTLED BLUE DE GOLAGE",
+        "sex": "HEMBRA",
+        "category": 3,
+        "colour": "NEGRA Y FUEGO ARLEQUIN",
+        "size": "KANINCHEN",
+        "born_date": "2015-10-2",
+        "image": "",
+        "second_image": "",
+        "third_image": "",
+        "fourth_image": ""
+        
+    }
+},
+{
+    "model": "main.item",
+    "pk": 12,
+    "fields": {
+        "official_name": "NINA DE GOLAGE",
+        "familiar_name": "NINA",
+        "father": "MANCHAS DE GOLAGE",
+        "mother": "TUYA DE LOS ACANTILADOS",
+        "sex": "HEMBRA",
+        "category": 3,
+        "colour": "CAOBA",
+        "size": "MINIATURA",
+        "born_date": "2010-5-18",
+        "image": "",
+        "second_image": "",
+        "third_image": "",
+        "fourth_image": ""
+        
+    }
+},
+{
+    "model": "main.item",
+    "pk": 13,
+    "fields": {
+        "official_name": "PIPER DE GOLAGE",
+        "familiar_name": "PIPER",
+        "father": "MAX DE GOLAGE",
+        "mother": "MAGIG RAMBOW VALENCIA",
+        "sex": "MACHO",
+        "category": 3,
+        "colour": "CAOBA",
+        "size": "KANINCHEN",
+        "born_date": "2013-9-5",
+        "image": "",
+        "second_image": "",
+        "third_image": "",
+        "fourth_image": ""
+        
+    }
+},
+{
+    "model": "main.item",
+    "pk": 14,
+    "fields": {
+        "official_name": "CHIQUILLA DE GOLAGE",
+        "familiar_name": "HIQUILLA",
+        "father": "CH. MAGIK RAMBOW GLAMOUR",
+        "mother": "SANDY DE GOLAGE",
+        "sex": "HEMBRA",
+        "category": 3,
+        "colour": "CAOBA",
+        "size": "KANINCHEN",
+        "born_date": "2014-10-20",
+        "image": "",
+        "second_image": "",
+        "third_image": "",
+        "fourth_image": ""
+        
+    }
+},
+{
+    "model": "main.item",
+    "pk": 15,
+    "fields": {
+        "official_name": "QUIRA DE GOLAGE",
+        "familiar_name": "QUIRA",
+        "father": "MAX DE GOLAGE",
+        "mother": "MAGIK RAMBOW GLAMOUR",
+        "sex": "HEMBRA",
+        "category": 3,
+        "colour": "CAOBA",
+        "size": "KANINCHEN",
+        "born_date": "2011-5-1",
+        "image": "",
+        "second_image": "",
+        "third_image": "",
+        "fourth_image": ""
+        
+    }
+},
+{
+    "model": "main.item",
+    "pk": 16,
+    "fields": {
+        "official_name": "VALLZARA LA INCREIBLE",
+        "familiar_name": "TOCHA",
+        "father": "CH.MAGIK RAMBOW GLAMOUR",
+        "mother": "CH. ZIMERBUNE HANNA MONTANA",
+        "sex": "HEMBRA",
+        "category": 3,
+        "colour": "CAOBA",
+        "size": "MINIATURA",
+        "born_date": "2015-5-10",
+        "image": "",
+        "second_image": "",
+        "third_image": "",
+        "fourth_image": ""
+        
+    }
+},
+{
+    "model": "main.item",
+    "pk": 17,
+    "fields": {
+        "official_name": "YO SOY UNICA DE VIÑASWALD",
+        "familiar_name": "UNICA",
+        "father": "CH. GRIAN V.D. STOOFHOEVE",
+        "mother": "CH. MATILDA V.D. WINDECHE",
+        "sex": "HEMBRA",
+        "category": 3,
+        "colour": "CAOBA ATIGRADA",
+        "size": "MINIATURA",
+        "born_date": "2014-5-12",
+        "image": "",
+        "second_image": "",
+        "third_image": "",
+        "fourth_image": ""
+        
+    }
+}
+]
