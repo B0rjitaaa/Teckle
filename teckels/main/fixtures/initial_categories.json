@@ -1,0 +1,37 @@
+[{
+    "model": "main.category",
+    "pk": 1,
+    "fields": {
+        "name": "Pelo Largo",
+        "description": "Ver nuestros teckel o Dachshunds Macho y Hembra con pelo largo, de tallas Kaninchen o miniatura.",
+        "slug": "pelo-largo",
+        "header_image": "",
+        "thumbnail": "images/categories/7825cb28b4454785aab743917debc017.jpg",
+        "parent_category": null,
+        "meta_tag": ""
+    }
+}, {
+    "model": "main.category",
+    "pk": 2,
+    "fields": {
+        "name": "Pelo duro",
+        "description": "Ver nuestros teckel o Dachshunds Macho y Hembra con pelo Duro, de tallas Kaninchen o miniatura.",
+        "slug": "pelo-duro",
+        "header_image": "",
+        "thumbnail": "images/categories/a1354377ea314ed392ee7c4ed001262e.jpg",
+        "parent_category": null,
+        "meta_tag": ""
+    }
+}, {
+    "model": "main.category",
+    "pk": 3,
+    "fields": {
+        "name": "Pelo corto",
+        "description": "Ver nuestros teckel o Dachshunds Macho y Hembra con pelo Corto, de tallas Kaninchen o miniatura.",
+        "slug": "pelo-corto",
+        "header_image": "",
+        "thumbnail": "images/categories/709ae1d646084b8c805b5705bc952200.jpg",
+        "parent_category": null,
+        "meta_tag": ""
+    }
+}]

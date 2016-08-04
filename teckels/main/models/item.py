@@ -92,6 +92,12 @@ class Item(models.Model):
         blank=True,
         null=True
     )
+    awards = models.CharField(
+        _('Premios'),
+        max_length=500,
+        blank=True,
+        null=True
+    )
     image = models.ImageField(
       upload_to=upload_to,
       null=True,
