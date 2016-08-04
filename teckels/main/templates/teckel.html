@@ -53,47 +53,54 @@
 	<div class="services">
 		<div class="container">
 			<div class="service-list">
-				<h3>MAIOLAS BRUNO</h3>
+				<h3>{{teckel.official_name}}</h3>
 				<ol class="breadcrumb">
 				  <li>
 				  	<a href="{% url 'index' %}">Inicio</a>
 				  </li>
 				  <li>
-				  	<a href="{% url 'index' %}">PELO DURO</a>
+				  	<a href="{% url 'teckels' teckel.category.slug teckel.category.id %}">{{teckel.category.name}}</a>
 				  </li>
-				  <li class="active">EL PERRO</li>
+				  <li class="active">{{teckel.familiar_name}}</li>
 				</ol>
 				<div class="col-md-5">
 					<div class="row">
-						<img src="{% static '../../media/images/5.jpg' %}" class="img-responsive" style="margin-left:15%; margin-bottom:15px">
+						{% if teckel.image %}
+							<img src="{{teckel.image.url}}" class="img-responsive" style="margin-left:15%; margin-bottom:15px">
+						{% endif %}
 					</div>
 					<div class="row">
-						<div class="col-md-4">
-							<img src="{% static '../../media/images/5.jpg' %}" class="img-responsive">
-						</div>
-						<div class="col-md-4">
-							<img src="{% static '../../media/images/5.jpg' %}" class="img-responsive">
-						</div>
-						<div class="col-md-4">
-							<img src="{% static '../../media/images/5.jpg' %}"class="img-responsive">
-						</div>
+						{% if second_image %}
+							<div class="col-md-4">
+								<img src="{{teckel.second_image.url}}" class="img-responsive">
+							</div>
+						{% endif %}
+						{% if third_image %}
+							<div class="col-md-4">
+								<img src="{{teckel.third_image.url}}" class="img-responsive">
+							</div>
+						{% endif %}
+						{% if fourth_image %}
+							<div class="col-md-4">
+								<img src="{{teckel.fourth_image.url}}"class="img-responsive">
+							</div>
+						{% endif %}
 					</div>
 				</div>
 				<div class="col-md-7">
 					<div class="row" style="margin-left:10%">
 						<ul class="list">
-							<li><a href="#">Nombre oficial: </a>Maiolas Bruno</li>
-							<li><a href="#">Nombre famiilar: </a></li>
-							<li><a href="#">Padre: </a></li>
-							<li><a href="#">Madre: </a></li>
-							<li><a href="#">Madre: </a></li>
-							<li><a href="#">Sexo: </a></li>
-							<li><a href="#">Pelo: </a></li>
-							<li><a href="#">Color: </a></li>
-							<li><a href="#">Tamaño: </a></li>
-							<li><a href="#">Fecha de nacimiento: </a></li>
-							<li><a href="#">Títulos: </a></li>
-							<li><a href="#">Comentarios: </a></li>
+							<li><a href="#">Nombre oficial: </a>{{teckel.official_name}}</li>
+							<li><a href="#">Nombre famiilar: </a>{{teckel.familiar_name}}</li>
+							<li><a href="#">Padre: </a>{{teckel.father}}</li>
+							<li><a href="#">Madre: </a>{{teckel.mother}}</li>
+							<li><a href="#">Sexo: </a>{{teckel.sex}}</li>
+							<li><a href="#">Pelo: </a>{{teckel.category.name}}</li>
+							<li><a href="#">Color: </a>{{teckel.colour}}</li>
+							<li><a href="#">Tamaño: </a>{{teckel.size}}</li>
+							<li><a href="#">Fecha de nacimiento: </a>{{teckel.born_date}}</li>
+							<li><a href="#">Títulos: </a>{{teckel.}}</li>
+							<li><a href="#">Comentarios: </a>{{teckel.}}</li>
 						</ul>
 					</div>
 				</div>

@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from main.models import Banner, Category, Shop
+from main.models import Banner, Category, Shop, Item
 
 # Create your views here.
 
@@ -24,15 +24,19 @@ def about(request):
 
 
 def teckels(request, category_slug, category_id):
-	banners = Banner.objects.all()
-	category = Category.objects.all()
+	teckels = Item.objects.filter(category_id=category_id)
 	shop = Shop.objects.all()[0]
 	response = {
-		'banners': banners,
-		'category': category,
+		'teckels': teckels,
 		'shop': shop
 	}
 	return render (request, 'teckels.html', response)
 
 def teckel(request, item_slug, item_id):
-	return render (request, 'teckel.html', {})
+	teckel = Item.objects.get(pk=item_id)
+	shop = Shop.objects.all()[0]
+	response = {
+		'teckel': teckel,
+		'shop': shop
+	}
+	return render (request, 'teckel.html', response)
