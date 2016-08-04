@@ -5,11 +5,11 @@ from main.models import Banner, Category, Shop
 
 def index(request):
 	banners = Banner.objects.all()
-	category = Category.objects.all()
+	categories = Category.objects.all()
 	shop = Shop.objects.all()[0]
 	response = {
 		'banners': banners,
-		'category': category,
+		'categories': categories,
 		'shop': shop
 	}
 	return render (request, 'index.html', response)
