@@ -86,6 +86,12 @@ class Item(models.Model):
         blank=True,
         null=True
     )
+    comments = models.CharField(
+        _('Comentarios'),
+        max_length=500,
+        blank=True,
+        null=True
+    )
     image = models.ImageField(
       upload_to=upload_to,
       null=True,
@@ -115,8 +121,14 @@ class Item(models.Model):
         verbose_name_plural = "Teckles"
 
     def __str__(self):
-        return self.official_name
+        if self.official_name:
+            return self.official_name
+        else:
+            return self.familiar_name
 
     def save(self, *args, **kwargs):
-        self.slug = defaultfilters.slugify(self.official_name)
+        if self.official_name:
+            self.slug = defaultfilters.slugify(self.official_name)
+        else:
+            self.slug = defaultfilters.slugify(self.familiar_name)
         super(Item, self).save(*args, **kwargs)
