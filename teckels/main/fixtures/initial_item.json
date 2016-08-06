@@ -878,4 +878,136 @@
         "third_image": "",
         "fourth_image": ""
     }
+}, {
+    "model": "main.item",
+    "pk": 43,
+    "fields": {
+        "official_name": "CRAKER DE GOLAGE",
+        "familiar_name": "CRAKER",
+        "father": "DADO DEL CESTERO HORTAS",
+        "mother": "SAMI DE GOLAGE",
+        "sex": "MACHO",
+        "colour": "JABALI OSCURO",
+        "size": "Kaninchen",
+        "born_date": "2013-10-30",
+        "shown_times": 0,
+        "slug": "craker-de-golage",
+        "category": 2,
+        "comments": "",
+        "awards": "",
+        "image": "",
+        "second_image": "",
+        "third_image": "",
+        "fourth_image": ""
+    }
+}, {
+    "model": "main.item",
+    "pk": 44,
+    "fields": {
+        "official_name": "CHOCOLATINA DE GOLAGE",
+        "familiar_name": "CHOCO",
+        "father": "DADO DEL CESTERO HORTAS",
+        "mother": "GUI\u00d1OL\u00b4S HORTALVILLA",
+        "sex": "HEMBRA",
+        "colour": "CHOCOLATE",
+        "size": "KANINCHEN",
+        "born_date": "2013-03-26",
+        "shown_times": 0,
+        "slug": "chocolatina-de-golage",
+        "category": 2,
+        "comments": "",
+        "awards": "",
+        "image": "",
+        "second_image": "",
+        "third_image": "",
+        "fourth_image": ""
+    }
+}, {
+    "model": "main.item",
+    "pk": 45,
+    "fields": {
+        "official_name": "FANI DE GOLAGE",
+        "familiar_name": "FANI",
+        "father": "EXCELL DE GOLAGE",
+        "mother": "LINA DE GOLAGE",
+        "sex": "HEMBRA",
+        "colour": "JABALI OSCURO",
+        "size": "MINIATURA",
+        "born_date": "2010-05-01",
+        "shown_times": 0,
+        "slug": "fani-de-golage",
+        "category": 2,
+        "comments": "",
+        "awards": "",
+        "image": "",
+        "second_image": "",
+        "third_image": "",
+        "fourth_image": ""
+    }
+}, {
+    "model": "main.item",
+    "pk": 46,
+    "fields": {
+        "official_name": "OBELITO DE GOLAGE",
+        "familiar_name": "PELUCHE",
+        "father": "CH. APOLO DEL CARONI",
+        "mother": "SISSA DE GOLAGE",
+        "sex": "HEMBRA",
+        "colour": "JABALI",
+        "size": "KANICHEN",
+        "born_date": "2014-09-24",
+        "shown_times": 0,
+        "slug": "obelito-de-golage",
+        "category": 2,
+        "comments": "",
+        "awards": "CAMPEONA DE ESPA\u00d1A JOVEN",
+        "image": "",
+        "second_image": "",
+        "third_image": "",
+        "fourth_image": ""
+    }
+}, {
+    "model": "main.item",
+    "pk": 47,
+    "fields": {
+        "official_name": "JENA DE GOLAGE",
+        "familiar_name": "JENI",
+        "father": "SNOOPY DE GOLAGE",
+        "mother": "ALLONGI BELLO'S OFELIA",
+        "sex": "HEMBRA",
+        "colour": "HOJA SECA",
+        "size": "KANINCHEN",
+        "born_date": "2011-05-05",
+        "shown_times": 0,
+        "slug": "jena-de-golage",
+        "category": 2,
+        "comments": "",
+        "awards": "",
+        "image": "",
+        "second_image": "",
+        "third_image": "",
+        "fourth_image": ""
+    }
+}, {
+    "model": "main.item",
+    "pk": 48,
+    "fields": {
+        "official_name": "FLAVIA DE GOLAGE",
+        "familiar_name": "FLAVIA",
+        "father": "OBELIX DE GOLAGE",
+        "mother": "EYES DE GOLAGE",
+        "sex": "HEMBRA",
+        "colour": "NEGRO Y FUEGO",
+        "size": "KANINCHEN",
+        "born_date": "2015-04-23",
+        "shown_times": 0,
+        "slug": "flavia-de-golage",
+        "category": 2,
+        "comments": "",
+        "awards": "",
+        "image": "",
+        "second_image": "",
+        "third_image": "",
+        "fourth_image": ""
+    }
 }]
