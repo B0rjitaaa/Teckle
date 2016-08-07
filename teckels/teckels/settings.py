@@ -15,6 +15,7 @@ from django.conf import global_settings
 import os
 import urllib.parse as urlparse
 
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -91,17 +92,29 @@ WSGI_APPLICATION = 'teckels.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': 'teckle',
-            'USER': 'developer',
-            'PASSWORD': 'developer',
-            'HOST': 'localhost',
-            'PORT': '',
-        }
-}
+if IS_ON_OPENSHIFT:
+    url = urlparse.urlparse(os.environ.get('OPENSHIFT_POSTGRESQL_DB_URL'))
+    DATABASES = {
+        'default': {
+                'ENGINE': 'django.db.backends.postgresql_psycopg2',
+                'NAME': os.environ.get('OPENSHIFT_APP_NAME'),
+                'USER': url.username,
+                'PASSWORD': url.password,
+                'HOST': url.hostname,
+                'PORT': url.port,
+            }
+    }
+else:
+    DATABASES = {
+        'default': {
+                'ENGINE': 'django.db.backends.postgresql_psycopg2',
+                'NAME': 'teckle',
+                'USER': 'developer',
+                'PASSWORD': 'developer',
+                'HOST': 'localhost',
+                'PORT': '',
+            }
+    }
 
 
 # Password validation
