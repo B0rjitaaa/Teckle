@@ -112,7 +112,7 @@ else:
                 'USER': 'developer',
                 'PASSWORD': 'developer',
                 'HOST': 'localhost',
-                'PORT': '',
+                'PORT': '5432',
             }
     }
 
